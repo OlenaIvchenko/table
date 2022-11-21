@@ -1,5 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+    --backgroud-color: #1B1B1B;
+    --table-bg: #1E1E1E;
+    --table-bg-hover: #3D2C1C;
+    --text-color: #D6D6D6;
+    --select-color: #6C6C6C;
+    --thead-bg: #252525;
+    --thead-text-color: #B3B3B3;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body, select, textarea {
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: var(--backgroud-color);
+}
+
+.orders {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 32px;
+}
+
+.orders__container {
+    max-width: 1302px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    background: var(--table-bg);
+    border: 1px solid var(--thead-bg);
+    outline: none;
+    border-radius: 8px;
+}
+
+.orders__header {
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px 24px 24px;
+}
+
+.orders__title {
+    width: 100%;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 118%;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 248px;
+    min-height: 32px;
+    box-shadow: 0px 0px 0px 1px var(--select-color);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding: 8px;
+    background-color: var(--table-bg);
+    position: relative;
+}
+
+.date__icon {
+    content:'';
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: url(icons/calendar.svg);
+    top: 9px;
+    left: 8px;
+}
+
+.date__select {
+    min-width: 248px;
+    background-color: var(--table-bg);
+    font-weight: 300;
+    font-size: 0.75rem;
+    line-height: 116%;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    padding-left: 26px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(icons/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 8px);
+    background-size: 10px;
+    cursor: pointer;
+} 
+
+.date__option {
+    font-weight: 300;
+    font-size: 0.75rem;
+    line-height: 116%;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+.orders__table {
+    width: 100%;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+.orders__head {
+    width: 100%;
+    height: 48px;
+}
+
+.thead {
+    background-color: var(--thead-bg);
+}
+
+.orders__head .orders__item:first-of-type {
+    text-align: left;
+    padding-left: 24px;
+}
+
+.orders__item--body:first-of-type {
+    text-align: left;
+    padding-left: 33px;
+}
+
+.orders__item:nth-of-type(2) {
+    text-align: right;
+}
+
+.orders__item:nth-of-type(4) {
+    text-align: left;
+    padding-right: 24px;
+}
+.orders__item:nth-of-type(5) {
+    text-align: left;
+}
+
+.orders__item:nth-of-type(6) {
+    text-align: right;
+    padding-right: 24px;
+}
+
+.orders__item{
+    width: calc(100% / 6);
+    height: 48px;
+}
+
+.order__item--thead {
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 121%;
+    letter-spacing: 0.02em;
+    color: var(--thead-text-color);
+}
+
+.orders__row--body:hover {
+    background-color: var(--table-bg-hover);
+    cursor: pointer;
+}
+
+.orders__item--body {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 121%;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.orders__row--body:last-child .orders__item--body {
+    border-bottom: none;
+}
+
+.orders__row--body:last-child .orders__item--body:first-child {
+    border-radius: 0 0 0 8px;
+}
+
+.orders__row--body:last-child .orders__item--body:last-child {
+    border-radius: 0 0 8px 0;
+}
+
+.status {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.status__icon{
+    margin-right: 4px;
 }
