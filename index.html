@@ -9,6 +9,172 @@
     <title>table</title>
  </head>
  <body>
-    
+    <section class="orders">
+        <div class="orders__container container">
+            <div class="orders__header header">
+                <h1 class="orders__title title">Orders</h1>
+                <div class="orders__date date">
+                    <span class="date__icon"></span>
+                    <select class="date__select" name="date" id="date">
+                        <option class="date__option" value="1" selected>1 Oct , 2021 - 1 Nov, 2021</option>
+                        <option class="date__option" value="2">current week</option>
+                        <option class="date__option" value="3">current month</option>
+                        <option class="date__option" value="4">current year</option>
+                    </select>
+                </div>
+            </div>
+            <table class="orders__table table">
+                <thead class="orders__head thead">
+                    <tr class="orders__row orders__row--thead">
+                        <th class="orders__item order__item--thead">Number</th>
+                        <th class="orders__item order__item--thead">Date</th>
+                        <th class="orders__item order__item--thead"></th>
+                        <th class="orders__item order__item--thead">Status</th>
+                        <th class="orders__item order__item--thead">Customer</th>
+                        <th class="orders__item order__item--thead">Revenue</th>
+                    </tr>
+                </thead>
+                <tbody class="orders__body">
+                    <tr class="orders__row orders__row--body">
+                        <td class="orders__item orders__item--body">#1019</td>
+                        <td class="orders__item orders__item--body">1 Nov, 14:42, 2021</td>
+                        <td class="orders__item orders__item--body"></td>
+                        <td class="orders__item orders__item--body">
+                            <div class="status">
+                                <img class="status__icon" src="icons/iconpaid.svg" alt="">
+                                <span class="status__text">Paid</span>
+                            </div>
+                        </td>
+                        <td class="orders__item orders__item--body">Bob Jonson</td>
+                        <td class="orders__item orders__item--body">$ 49.00</td>
+                    </tr>
+                    <tr class="orders__row orders__row--body">
+                        <td class="orders__item orders__item--body">#1016</td>
+                        <td class="orders__item orders__item--body">30 Oct, 15:02, 2021</td>
+                        <td class="orders__item orders__item--body"></td>
+                        <td class="orders__item orders__item--body">
+                            <div class="status">
+                                <img class="status__icon" src="icons/iconpaid.svg" alt="">
+                                <span class="status__text">Paid</span>
+                            </div>
+                        </td>
+                        <td class="orders__item orders__item--body">Tom Smith</td>
+                        <td class="orders__item orders__item--body">$ 69.00</td>
+                    </tr>
+                    <tr class="orders__row orders__row--body">
+                        <td class="orders__item orders__item--body">#1015</td>
+                        <td class="orders__item orders__item--body">29 Oct, 18:30, 2021</td>
+                        <td class="orders__item orders__item--body"></td>
+                        <td class="orders__item orders__item--body"><div class="status">
+                                <img class="status__icon" src="icons/pendingicon.svg" alt="">
+                                <span class="status__text">Paid</span>
+                            </div></td>
+                        <td class="orders__item orders__item--body">Andrea Wise</td>
+                        <td class="orders__item orders__item--body">$ 49.00</td>
+                    </tr>
+                    <tr class="orders__row orders__row--body">
+                        <td class="orders__item orders__item--body">#1014</td>
+                        <td class="orders__item orders__item--body">29 Oct, 09:42, 2021</td>
+                        <td class="orders__item orders__item--body"></td>
+                        <td class="orders__item orders__item--body"><div class="status">
+                                <img class="status__icon" src="icons/iconpaid.svg" alt="">
+                                <span class="status__text">Paid</span>
+                            </div></td>
+                        <td class="orders__item orders__item--body">Lian Oneil</td>
+                        <td class="orders__item orders__item--body">$ 49.00</td>
+                    </tr>
+                    <tr class="orders__row orders__row--body">
+                        <td class="orders__item orders__item--body">#1012</td>
+                        <td class="orders__item orders__item--body">28 Oct, 11:07, 2021</td>
+                        <td class="orders__item orders__item--body"></td>
+                        <td class="orders__item orders__item--body">
+                            <div class="status">
+                                <img class="status__icon" src="icons/Declinedicon.svg" alt="">
+                                <span class="status__text">Declined</span>
+                            </div></td>
+                        <td class="orders__item orders__item--body">Jason Schuller</td>
+                        <td class="orders__item orders__item--body">$ 199.00</td>
+                    </tr>
+                    <tr class="orders__row orders__row--body">
+                        <td class="orders__item orders__item--body">#1011</td>
+                        <td class="orders__item orders__item--body">27 Oct, 14:42, 2021</td>
+                        <td class="orders__item orders__item--body"></td>
+                        <td class="orders__item orders__item--body"><div class="status">
+                                <img class="status__icon" src="icons/iconpaid.svg" alt="">
+                                <span class="status__text">Paid</span>
+                            </div></td>
+                        <td class="orders__item orders__item--body">Eva Calvert</td>
+                        <td class="orders__item orders__item--body">$ 49.00</td>
+                    </tr>
+                    <tr class="orders__row orders__row--body">
+                        <td class="orders__item orders__item--body">#1010</td>
+                        <td class="orders__item orders__item--body">26 Oct, 12:23, 2021</td>
+                        <td class="orders__item orders__item--body"></td>
+                        <td class="orders__item orders__item--body"><div class="status">
+                                <img class="status__icon" src="icons/pendingicon.svg" alt="">
+                                <span class="status__text">Pending</span>
+                            </div></td>
+                        <td class="orders__item orders__item--body">Monroe Bond</td>
+                        <td class="orders__item orders__item--body">$ 199.00</td>
+                    </tr>
+                    <tr class="orders__row orders__row--body">
+                        <td class="orders__item orders__item--body">#1009</td>
+                        <td class="orders__item orders__item--body">26 Oct, 11:40, 2021</td>
+                        <td class="orders__item orders__item--body"></td>
+                        <td class="orders__item orders__item--body"><div class="status">
+                                <img class="status__icon" src="icons/pendingicon.svg" alt="">
+                                <span class="status__text">Pending</span>
+                            </div></td>
+                        <td class="orders__item orders__item--body">Dustin Mock</td>
+                        <td class="orders__item orders__item--body">$ 199.00</td>
+                    </tr>
+                    <tr class="orders__row orders__row--body">
+                        <td class="orders__item orders__item--body">#1008</td>
+                        <td class="orders__item orders__item--body">26 Oct, 10:22, 2021</td>
+                        <td class="orders__item orders__item--body"></td>
+                        <td class="orders__item orders__item--body"><div class="status">
+                                <img class="status__icon" src="icons/iconpaid.svg" alt="">
+                                <span class="status__text">Paid</span>
+                            </div></td>
+                        <td class="orders__item orders__item--body">Lauren Trujillo</td>
+                        <td class="orders__item orders__item--body">$ 69.00</td>
+                    </tr>
+                    <tr class="orders__row orders__row--body">
+                        <td class="orders__item orders__item--body">#1007</td>
+                        <td class="orders__item orders__item--body">25 Oct, 14:15, 2021</td>
+                        <td class="orders__item orders__item--body"></td>
+                        <td class="orders__item orders__item--body"><div class="status">
+                                <img class="status__icon" src="icons/iconpaid.svg" alt="">
+                                <span class="status__text">Paid</span>
+                            </div></td>
+                        <td class="orders__item orders__item--body">Samara William</td>
+                        <td class="orders__item orders__item--body">$ 49.00</td>
+                    </tr>
+                    <tr class="orders__row orders__row--body">
+                        <td class="orders__item orders__item--body">#1006</td>
+                        <td class="orders__item orders__item--body">25 Oct, 13:57, 2021</td>
+                        <td class="orders__item orders__item--body"></td>
+                        <td class="orders__item orders__item--body"><div class="status">
+                                <img class="status__icon" src="icons/Declinedicon.svg" alt="">
+                                <span class="status__text">Declined</span>
+                            </div></td>
+                        <td class="orders__item orders__item--body">Andy Hope</td>
+                        <td class="orders__item orders__item--body">$ 69.00</td>
+                    </tr>
+                    <tr class="orders__row orders__row--body">
+                        <td class="orders__item orders__item--body">#1005</td>
+                        <td class="orders__item orders__item--body">25 Oct, 13:57, 2021</td>
+                        <td class="orders__item orders__item--body"></td>
+                        <td class="orders__item orders__item--body"><div class="status">
+                                <img class="status__icon" src="icons/iconpaid.svg" alt="">
+                                <span class="status__text">Paid</span>
+                            </div></td>
+                        <td class="orders__item orders__item--body">Karen Rose</td>
+                        <td class="orders__item orders__item--body">$ 199.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
  </body>
  </html>
